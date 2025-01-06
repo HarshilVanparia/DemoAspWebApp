@@ -1,0 +1,15 @@
+﻿html {
+
+}
+body {
+    background-color:aquamarine;
+}
+
+nav{
+    padding-inline: 50px;
+}
+
+.trtmain{
+    padding-block: 50px;
+    padding-inline: 50px;
+}
