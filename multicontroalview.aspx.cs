@@ -11,7 +11,10 @@ namespace DemoAspWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                MultiView1.ActiveViewIndex = 0; // Set the first view as active
+            }
         }
 
         protected void btnreg_Click(object sender, EventArgs e)

@@ -67,7 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FileUploadDemo.aspx" />
+    <Content Include="A2Q2.aspx" />
+    <Content Include="AdRotatorDemo.aspx" />
+    <Content Include="Ads.xml" />
+    <Content Include="App_Data\testing.mdf" />
+    <Content Include="App_Data\testing_log.ldf">
+      <DependentUpon>testing.mdf</DependentUpon>
+    </Content>
+    <Content Include="FileUploadControlDemo.aspx" />
+    <Content Include="Images\grn.jpg" />
+    <Content Include="Images\hed.jpg" />
+    <Content Include="Images\Weekend.jpg" />
     <Content Include="imgs\banner.jpg" />
     <Content Include="imgs\logo.png" />
     <Content Include="multicontroalview.aspx" />
@@ -80,12 +90,26 @@
     <Content Include="WebFormwithmaster.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileUploadDemo.aspx.cs">
-      <DependentUpon>FileUploadDemo.aspx</DependentUpon>
+    <Compile Include="A2Q2.aspx.cs">
+      <DependentUpon>A2Q2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FileUploadDemo.aspx.designer.cs">
-      <DependentUpon>FileUploadDemo.aspx</DependentUpon>
+    <Compile Include="A2Q2.aspx.designer.cs">
+      <DependentUpon>A2Q2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdRotatorDemo.aspx.cs">
+      <DependentUpon>AdRotatorDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdRotatorDemo.aspx.designer.cs">
+      <DependentUpon>AdRotatorDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileUploadControlDemo.aspx.cs">
+      <DependentUpon>FileUploadControlDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileUploadControlDemo.aspx.designer.cs">
+      <DependentUpon>FileUploadControlDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="multicontroalview.aspx.cs">
       <DependentUpon>multicontroalview.aspx</DependentUpon>
@@ -147,6 +171,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

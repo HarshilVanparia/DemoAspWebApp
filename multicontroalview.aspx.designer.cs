@@ -69,13 +69,13 @@ namespace DemoAspWebApp
         protected global::System.Web.UI.WebControls.TextBox em;
 
         /// <summary>
-        /// rfvEmail control.
+        /// emvalidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator rfvEmail;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator emvalidator;
 
         /// <summary>
         /// pas control.
@@ -85,6 +85,15 @@ namespace DemoAspWebApp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox pas;
+
+        /// <summary>
+        /// passcustom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator passcustom;
 
         /// <summary>
         /// num control.
@@ -141,15 +150,6 @@ namespace DemoAspWebApp
         protected global::System.Web.UI.WebControls.TextBox pass;
 
         /// <summary>
-        /// cpass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox cpass;
-
-        /// <summary>
         /// btnlogin control.
         /// </summary>
         /// <remarks>
@@ -157,14 +157,5 @@ namespace DemoAspWebApp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnlogin;
-
-        /// <summary>
-        /// Home control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.View Home;
     }
 }

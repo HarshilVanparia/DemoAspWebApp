@@ -1,11 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="multicontroalview.aspx.cs" Inherits="DemoAspWebApp.multicontroalview" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="multicontroalview.aspx.cs" Inherits="DemoAspWebApp.multicontroalview" TraceMode="SortByTime" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>master</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -20,17 +19,18 @@
                     <br />
                     Email:
                     <asp:TextBox ID="em" runat="server"></asp:TextBox>
-                    <asp:RegularExpressionValidator ID="rfvEmail" runat="server" ControlToValidate="em" ErrorMessage="Please Enter Email" ForeColor="Red"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="emvalidator" runat="server" ControlToValidate="em" ErrorMessage="Enter valid email" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     <br />
                     <br />
 
                     Password:
                     <asp:TextBox ID="pas" runat="server"></asp:TextBox>
+                    <asp:CustomValidator ID="passcustom" runat="server" ControlToValidate="pas" ErrorMessage="Enter Password" ForeColor="Red" ValidateEmptyText="True" Font-Names=" ">Enter Password</asp:CustomValidator>
                     <br />
                     <br />
                     Number:
-                    <asp:TextBox ID="num" runat="server"></asp:TextBox>
-                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="num" ErrorMessage="Enter Number" ForeColor="Red"></asp:RangeValidator>
+                    <asp:TextBox ID="num" runat="server" TextMode="Number"></asp:TextBox>
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="num" ErrorMessage="Enter Number" ForeColor="Red" MaximumValue="12" MinimumValue="10">Enter Number</asp:RangeValidator>
                     <br />
                     <br />
                     <asp:Button ID="btnreg" runat="server" Text="Button" OnClick="btnreg_Click" />
@@ -47,23 +47,11 @@
                     <asp:TextBox ID="pass" runat="server"></asp:TextBox>
                     <br />
                     <br />
-                    Confirm Password:
-                    <asp:TextBox ID="cpass" runat="server"></asp:TextBox>
-                    <br />
-                    <br />
                     <asp:Button ID="btnlogin" runat="server" Text="Button" OnClick="btnlogin_Click" />
 
                 </asp:View>
 
 
-
-
-
-                <asp:View ID="Home" runat="server">
-                    Welcome
-   
-   
-                </asp:View>
 
             </asp:MultiView>
         </div>
